@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Refrigerator">
         <activity
+            android:name=".AdminMainActivity"
+            android:exported="false" />
+        <activity
             android:name=".ReportErrorActivity"
             android:exported="false" />
         <activity

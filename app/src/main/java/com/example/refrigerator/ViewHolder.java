@@ -26,6 +26,7 @@ class ViewHolder extends RecyclerView.ViewHolder {
         ingredientCount = itemView.findViewById(R.id.ingredientCount);
         button = itemView.findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
                 String strText = ingredientName.getText().toString();
