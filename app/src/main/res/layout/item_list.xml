@@ -4,19 +4,36 @@
     android:layout_height="50dp">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
+        android:id="@+id/ingredientName"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
         android:layout_alignParentLeft="true"
         android:gravity="center_vertical"
         android:text="text text text text"
         android:textSize="20dp" />
-        //alignParentLeft 는 reativeLayout 속성임
+    //alignParentLeft 는 reativeLayout 속성임
+
+    <TextView
+        android:id="@+id/ingredientCount"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@id/ingredientName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="198dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center_vertical"
+        android:text="count"
+        android:textSize="20dp" />
+
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_alignParentRight="true"
-        android:text="button" />
+        android:text="수량 변경" />
 </RelativeLayout>
 

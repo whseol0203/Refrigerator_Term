@@ -21,10 +21,28 @@ public class IngredientActivity extends AppCompatActivity {
         //recyclerView.setLayoutManager(new LinearLayoutManager(this, RecyclerView.HORIZONTAL, false));
 
         adapter = new Adapter();
-        for (int i = 0; i < 100; i++) {
-            String str = i + "번째 아이템";
-            adapter.setArrayData(str);
-        }
+
+        adapter.setArrayData("당근 1");
+        adapter.setArrayData("오이 2");
+        adapter.setArrayData("귤 3");
+        adapter.setArrayData("감 41");
+        adapter.setArrayData("감자 100");
+        adapter.setArrayData("당근 1");
+        adapter.setArrayData("오이 2");
+        adapter.setArrayData("귤 3");
+        adapter.setArrayData("감 41");
+        adapter.setArrayData("감자 100");
+        adapter.setArrayData("당근 1");
+        adapter.setArrayData("오이 2");
+        adapter.setArrayData("귤 3");
+        adapter.setArrayData("감 41");
+        adapter.setArrayData("감자 100");
+        adapter.setArrayData("당근 1");
+        adapter.setArrayData("오이 2");
+        adapter.setArrayData("귤 3");
+        adapter.setArrayData("감 41");
+        adapter.setArrayData("감자 100");
+
         recyclerView.setAdapter(adapter);
     }
 

@@ -16,17 +16,19 @@ import androidx.recyclerview.widget.RecyclerView;
  */
 
 class ViewHolder extends RecyclerView.ViewHolder {
-    public TextView textView;
+    public TextView ingredientName;
+    public TextView ingredientCount;
     public Button button;
 
     ViewHolder(Context context, View itemView) {
         super(itemView);
-        textView = itemView.findViewById(R.id.textView);
+        ingredientName = itemView.findViewById(R.id.ingredientName);
+        ingredientCount = itemView.findViewById(R.id.ingredientCount);
         button = itemView.findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String strText = textView.getText().toString();
+                String strText = ingredientName.getText().toString();
                 Toast.makeText(context, strText, Toast.LENGTH_SHORT).show();
             }
         });

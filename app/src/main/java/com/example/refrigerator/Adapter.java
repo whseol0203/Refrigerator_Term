@@ -29,8 +29,10 @@ public class Adapter extends RecyclerView.Adapter<ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        String text = arrayList.get(position);
-        holder.textView.setText(text);
+        String str = arrayList.get(position);
+        String [] arr = str.split(" ");
+        holder.ingredientName.setText(arr[0]);
+        holder.ingredientCount.setText(arr[1] + "개");
     }
 
     @Override
