@@ -33,6 +33,7 @@ public class Adapter extends RecyclerView.Adapter<ViewHolder> {
         String [] arr = str.split(" ");
         holder.ingredientName.setText(arr[0]);
         holder.ingredientCount.setText(arr[1] + "개");
+        holder.ingredientDate.setText(arr[2] + "일째");
     }
 
     @Override

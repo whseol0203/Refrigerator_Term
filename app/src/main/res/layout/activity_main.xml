@@ -63,7 +63,7 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="안녕하세요! UserNickName 님!"
+        android:text="안녕하세요! 닉네임 님!"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"

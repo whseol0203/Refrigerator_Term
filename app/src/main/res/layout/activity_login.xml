@@ -31,10 +31,13 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
         android:ems="10"
+        android:hint="ID를 입력하세요"
         android:inputType="textPersonName"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,10 +46,13 @@
 
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
         android:ems="10"
+        android:hint="비밀번호를 입력하세요"
         android:inputType="textPassword"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"

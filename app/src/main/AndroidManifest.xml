@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Refrigerator">
         <activity
+            android:name=".AddRecipeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CrawlingYoutubeActivity"
+            android:exported="false" />
+        <activity
             android:name=".CheckUserReportActivity"
             android:exported="false" />
         <activity

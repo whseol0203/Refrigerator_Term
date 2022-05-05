@@ -32,26 +32,17 @@ public class IngredientActivity extends AppCompatActivity {
 
         adapter = new Adapter();
 
-        adapter.setArrayData("당근 1");
-        adapter.setArrayData("오이 2");
-        adapter.setArrayData("귤 3");
-        adapter.setArrayData("감 41");
-        adapter.setArrayData("감자 100");
-        adapter.setArrayData("당근 1");
-        adapter.setArrayData("오이 2");
-        adapter.setArrayData("귤 3");
-        adapter.setArrayData("감 41");
-        adapter.setArrayData("감자 100");
-        adapter.setArrayData("당근 1");
-        adapter.setArrayData("오이 2");
-        adapter.setArrayData("귤 3");
-        adapter.setArrayData("감 41");
-        adapter.setArrayData("감자 100");
-        adapter.setArrayData("당근 1");
-        adapter.setArrayData("오이 2");
-        adapter.setArrayData("귤 3");
-        adapter.setArrayData("감 41");
-        adapter.setArrayData("감자 100");
+        adapter.setArrayData("당근 1 20");
+        adapter.setArrayData("당근 2 10");
+        adapter.setArrayData("귤 3 8");
+        adapter.setArrayData("감자 2 4");
+        adapter.setArrayData("숙주 1 9");
+        adapter.setArrayData("마늘 3 8");
+        adapter.setArrayData("양파 1 2");
+        adapter.setArrayData("가지 2 1");
+        adapter.setArrayData("어묵 3 1");
+
+
 
         recyclerView.setAdapter(adapter);
     }

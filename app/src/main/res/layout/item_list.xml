@@ -1,31 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="50dp">
+    android:layout_height="100dp">
 
-    <TextView
-        android:id="@+id/ingredientName"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="10dp"
-        android:layout_alignParentLeft="true"
-        android:gravity="center_vertical"
-        android:text="text text text text"
-        android:textSize="20dp" />
     //alignParentLeft 는 reativeLayout 속성임
 
     <TextView
+        android:id="@+id/ingredientName"
+        android:layout_width="172dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-1dp"
+        android:gravity="center"
+        android:text="text text text text"
+        android:textSize="20dp" />
+
+    <TextView
         android:id="@+id/ingredientCount"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_width="69dp"
+        android:layout_height="50dp"
         android:layout_alignLeft="@id/ingredientName"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginLeft="198dp"
-        android:layout_marginTop="-1dp"
-        android:layout_marginBottom="0dp"
-        android:gravity="center_vertical"
+        android:layout_marginLeft="209dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
         android:text="count"
         android:textSize="20dp" />
 
@@ -34,6 +39,21 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_alignParentRight="true"
-        android:text="수량 변경" />
+        android:textSize="20dp"
+        android:text="소비" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ingredientName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="11dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="20dp" />
 </RelativeLayout>
 

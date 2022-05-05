@@ -18,12 +18,14 @@ import androidx.recyclerview.widget.RecyclerView;
 class ViewHolder extends RecyclerView.ViewHolder {
     public TextView ingredientName;
     public TextView ingredientCount;
+    public TextView ingredientDate;
     public Button button;
 
     ViewHolder(Context context, View itemView) {
         super(itemView);
         ingredientName = itemView.findViewById(R.id.ingredientName);
         ingredientCount = itemView.findViewById(R.id.ingredientCount);
+        ingredientDate = itemView.findViewById(R.id.date);
         button = itemView.findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
 

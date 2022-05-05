@@ -22,41 +22,33 @@
             android:layout_height="30dp"
             android:layout_marginTop="16dp"
             android:gravity="center"
-            android:text="보유한 감자의 수"
+            android:text="보유한 당근의 수"
             android:textAlignment="center"
             android:textSize="20dp"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/add_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_marginStart="44dp"
-            android:layout_marginBottom="60dp"
-
-            android:text="추가"
-            android:textSize="20dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <Button
             android:id="@+id/sub_btn"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="50dp"
 
-            android:layout_marginEnd="44dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginBottom="60dp"
             android:text="감소"
             android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <EditText
             android:id="@+id/editTextTextPersonName6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="숫자만 입력해주세요"
             android:inputType="textPersonName"
+            android:textAlignment="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -67,8 +59,8 @@
             android:id="@+id/stock_count"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="20개"
+            android:layout_marginTop="8dp"
+            android:text="1개"
             android:textAlignment="center"
             android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -77,15 +69,29 @@
 
         <Button
             android:id="@+id/cancel_button"
-            android:layout_width="215dp"
-            android:layout_height="43dp"
-            android:layout_marginBottom="16dp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
             android:text="뒤로 가기"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.505"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="20일째"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stock_count" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
