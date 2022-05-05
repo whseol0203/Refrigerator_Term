@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Refrigerator">
         <activity
+            android:name=".CheckUserReportActivity"
+            android:exported="false" />
+        <activity
             android:name=".AdminMainActivity"
             android:exported="false" />
         <activity
