@@ -64,6 +64,8 @@ public class UserMainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), ReportYoutubeChannelActivity.class);
+                intent.putExtra("userName", userName);
+                intent.putExtra("userId",userId);
                 startActivity(intent);
             }
         });
