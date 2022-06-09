@@ -6,10 +6,10 @@ public class UserInfo {
     private String userName;
     private String id;
     private String pwd;
-    private Integer userMode;
+    private String userMode;
     private boolean isLogin;
 
-    public UserInfo(String userName, String id, String pwd, Integer userMode) {
+    public UserInfo(String userName, String id, String pwd, String userMode) {
         this.userName = userName;
         this.id = id;
         this.pwd = pwd;
@@ -20,7 +20,7 @@ public class UserInfo {
         return this;
     }
 
-    public Integer getUserMode() {
+    public String getUserMode() {
         return userMode;
     }
 
@@ -36,7 +36,7 @@ public class UserInfo {
         return pwd;
     }
 
-    public void setUserMode(Integer userMode) {
+    public void setUserMode(String userMode) {
         this.userMode = userMode;
     }
 

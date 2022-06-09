@@ -34,30 +34,38 @@ public class LoginActivity extends AppCompatActivity {
         //pwd 를 적는 TextBox;
         EditText pwdTextBox = (EditText) findViewById(R.id.login_pwd_textbox);
 
-
-
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Login login = new Login("sample name", idTextBox.getText().toString(), pwdTextBox.getText().toString(),1);
+                Login login = new Login("sample name", idTextBox.getText().toString(), pwdTextBox.getText().toString(),"user");
                 FirebaseFirestore databaseInstance = FirebaseFirestore.getInstance();
 
                 DocumentReference docRef = databaseInstance.collection("user_information")
                         .document(idTextBox.getText().toString());
 
                 docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                    String inputPwd = login.getPwd();
                     @Override
                     public void onComplete(@NonNull Task<DocumentSnapshot> task) {
                         if (task.isSuccessful()) {
                             DocumentSnapshot document = task.getResult();
                             if (document.exists()) {
-                                Intent intent = new Intent(getApplicationContext(), UserMainActivity.class);
-                                startActivity(intent);
-                                Log.d("Doc", "DocumentSnapshot data: " + document.getData());
+                                //ID가 존재하고, 비밀번호가 일치하는경우.
+                                if(inputPwd.equals(document.get("pwd").toString())){
+                                    Intent intent = new Intent(getApplicationContext(), UserMainActivity.class);
+                                    startActivity(intent);
+                                    Log.d("Doc", "DocumentSnapshot data: " + document.get("pwd").toString());
+                                }else{
+                                    Toast.makeText(LoginActivity.this, "비밀번호가 틀립니다.", Toast.LENGTH_SHORT).show();
+                                }
+
+
                             } else {
+                                Toast.makeText(LoginActivity.this, "아이디가 없습니다.", Toast.LENGTH_SHORT).show();
                                 Log.d("Doc", "No such document");
                             }
                         } else {
+                            Toast.makeText(LoginActivity.this, "데이터베이스 오류.", Toast.LENGTH_SHORT).show();
                             Log.d("Doc", "get failed with ", task.getException());
                         }
                     }

@@ -16,7 +16,7 @@ import java.util.Map;
 
 
 public class Login extends UserInfo{
-    public Login(String name, String id, String pwd, Integer userMode){
+    public Login(String name, String id, String pwd, String userMode){
         super(name,id,pwd,userMode);
     }
 

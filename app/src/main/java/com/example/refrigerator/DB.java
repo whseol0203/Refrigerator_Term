@@ -23,13 +23,15 @@ public class DB {
 
     /**
      * 유저 정보를 추가
+     * 추가되는 정보는 닉네임, 비밀번호, 유저 모드
      * @param userInfo
      */
     public void addUserInfo(UserInfo userInfo){
 
         Map<String, String> user = new HashMap<>();
-        user.put("username", userInfo.getUserName());
+        user.put("user_name", userInfo.getUserName());
         user.put("pwd", userInfo.getPwd());
+        user.put("user_mode",userInfo.getUserMode());
 
 
         databaseInstance.collection("user_information")

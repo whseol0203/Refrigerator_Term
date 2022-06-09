@@ -11,7 +11,7 @@ public class Register extends UserInfo{
      * @param pwd 유저 pwd
      * @param userMode 유저 권한
      */
-    public Register(String name, String id, String pwd, Integer userMode){
+    public Register(String name, String id, String pwd, String userMode){
         super(name,id,pwd,userMode);
     }
 
