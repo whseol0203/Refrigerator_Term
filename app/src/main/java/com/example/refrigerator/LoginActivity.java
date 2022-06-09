@@ -55,10 +55,14 @@ public class LoginActivity extends AppCompatActivity {
                                     if(document.get("user_mode").toString().equals("user")){
                                         Log.d("Doc", "userMode Login success");
                                         Intent intent = new Intent(getApplicationContext(), UserMainActivity.class);
+                                        intent.putExtra("userId",idTextBox.getText().toString());
+                                        intent.putExtra("userName",document.get("user_name").toString());
                                         startActivity(intent);
                                     }else if(document.get("user_mode").toString().equals("admin")){
                                         Log.d("Doc", "admin Login success");
                                         Intent intent = new Intent(getApplicationContext(), AdminMainActivity.class);
+                                        intent.putExtra("userId",idTextBox.getText().toString());
+                                        intent.putExtra("userName",document.get("user_name").toString());
                                         startActivity(intent);
                                     }
 
@@ -81,6 +85,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+        //뒤로가기 버튼 이벤트
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

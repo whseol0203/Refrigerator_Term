@@ -7,7 +7,7 @@
     tools:context=".UserMainActivity">
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/user_main_inquire_ingredient"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.546" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/user_main_channel_request"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -32,10 +32,10 @@
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button9" />
+        app:layout_constraintTop_toBottomOf="@+id/user_main_report" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/user_main_inquire_recipe"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -45,10 +45,10 @@
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+        app:layout_constraintTop_toBottomOf="@+id/user_main_inquire_ingredient" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/user_main_report"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -58,10 +58,10 @@
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button8" />
+        app:layout_constraintTop_toBottomOf="@+id/user_main_inquire_recipe" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/user_main_logout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -71,13 +71,14 @@
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
+        app:layout_constraintTop_toBottomOf="@+id/user_main_channel_request" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="294dp"
         android:layout_height="279dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
         app:srcCompat="@drawable/logo" />
@@ -86,13 +87,13 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="환영합니다 ABC 님!"
+        android:layout_marginTop="16dp"
+        android:text="testText"
         android:textAlignment="center"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.005" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
