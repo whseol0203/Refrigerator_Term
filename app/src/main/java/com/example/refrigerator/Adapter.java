@@ -31,9 +31,9 @@ public class Adapter extends RecyclerView.Adapter<ViewHolder> {
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         String str = arrayList.get(position);
         String [] arr = str.split(" ");
-        holder.ingredientName.setText(arr[0]);
-        holder.ingredientCount.setText(arr[1] + "개");
-        holder.ingredientDate.setText(arr[2] + "일째");
+        holder.userName.setText(arr[0] + " 사용자");
+        holder.content.setText(arr[1]);
+
     }
 
     @Override

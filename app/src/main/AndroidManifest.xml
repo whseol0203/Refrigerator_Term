@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Refrigerator">
         <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".AddRecipeActivity"
             android:exported="false" />
         <activity
@@ -28,7 +37,7 @@
             android:name=".ReportYoutubeChannelActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".IngredientActivity"
             android:exported="false" />
         <activity
             android:name=".RegisterActivity"
@@ -36,15 +45,7 @@
         <activity
             android:name=".UserMainActivity"
             android:exported="false" />
-        <activity
-            android:name=".IngredientActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>

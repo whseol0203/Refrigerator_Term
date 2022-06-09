@@ -19,7 +19,7 @@ public class IngredientDialog extends Dialog {
 
         stock_text = findViewById(R.id.stock_text);
         stock_count = findViewById(R.id.stock_count);
-        add = findViewById(R.id.add_btn);
+
         sub = findViewById(R.id.sub_btn);
     }
 }
