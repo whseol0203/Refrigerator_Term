@@ -29,15 +29,15 @@ public class LoginActivity extends AppCompatActivity {
         Button loginButton = (Button) findViewById(R.id.login_btn);
         Button registerButton = (Button) findViewById(R.id.register_btn);
 
-        //id를 적는 TextBox;
+        //id랑 비밀번호를 입력받음.
         EditText idTextBox = (EditText) findViewById(R.id.login_id_textbox);
-        //pwd 를 적는 TextBox;
         EditText pwdTextBox = (EditText) findViewById(R.id.login_pwd_textbox);
 
+        //로그인 버튼 이벤트
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Login login = new Login("sample name", idTextBox.getText().toString(), pwdTextBox.getText().toString(),"user");
+                Login login = new Login("", idTextBox.getText().toString(), pwdTextBox.getText().toString(),"");
                 FirebaseFirestore databaseInstance = FirebaseFirestore.getInstance();
 
                 DocumentReference docRef = databaseInstance.collection("user_information")
@@ -52,9 +52,17 @@ public class LoginActivity extends AppCompatActivity {
                             if (document.exists()) {
                                 //ID가 존재하고, 비밀번호가 일치하는경우.
                                 if(inputPwd.equals(document.get("pwd").toString())){
-                                    Intent intent = new Intent(getApplicationContext(), UserMainActivity.class);
-                                    startActivity(intent);
-                                    Log.d("Doc", "DocumentSnapshot data: " + document.get("pwd").toString());
+                                    if(document.get("user_mode").toString().equals("user")){
+                                        Log.d("Doc", "userMode Login success");
+                                        Intent intent = new Intent(getApplicationContext(), UserMainActivity.class);
+                                        startActivity(intent);
+                                    }else if(document.get("user_mode").toString().equals("admin")){
+                                        Log.d("Doc", "admin Login success");
+                                        Intent intent = new Intent(getApplicationContext(), AdminMainActivity.class);
+                                        startActivity(intent);
+                                    }
+
+
                                 }else{
                                     Toast.makeText(LoginActivity.this, "비밀번호가 틀립니다.", Toast.LENGTH_SHORT).show();
                                 }
