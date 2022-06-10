@@ -18,7 +18,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         //버튼 정보
         Button backButton = (Button) findViewById(R.id.register_back_btn);
-        Button registerButton = (Button) findViewById(R.id.register_register_button);
+        Button registerButton = (Button) findViewById(R.id.ingredient_item_list_consume_button);
 
         //유저 입력 정보
         EditText nameTextBox = (EditText) findViewById(R.id.register_name_textbox);

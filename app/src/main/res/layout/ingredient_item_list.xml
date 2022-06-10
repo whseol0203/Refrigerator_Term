@@ -7,17 +7,17 @@
 
     <TextView
         android:id="@+id/ingredient_item_list_ingredient_name"
-        android:layout_width="172dp"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
         android:layout_centerVertical="true"
-        android:layout_marginStart="1dp"
-        android:layout_marginLeft="1dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="43dp"
         android:gravity="center"
         android:text="text text text text"
         android:textSize="20dp" />
@@ -27,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_alignParentRight="true"
-        android:text="삭제"
+        android:text="소비"
         android:textSize="20dp" />
 
     <TextView
@@ -35,9 +35,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="66dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/ingredient_item_list_ingredient_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
-        android:layout_marginStart="82dp"
+        android:layout_marginEnd="133dp"
         android:text="TextView" />
 
 </RelativeLayout>
-

@@ -2,6 +2,7 @@ package com.example.refrigerator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -20,7 +21,6 @@ public class UserMainActivity extends AppCompatActivity {
         String userName = intent.getStringExtra("userName");
         String userId = intent.getStringExtra("userId");
 
-        Log.d("Doc", intent.getStringExtra("userName"));
         greeting.setText("안녕하세요 "+ userName+" 님");
 
         //버튼 정보
@@ -43,7 +43,7 @@ public class UserMainActivity extends AppCompatActivity {
         inquireRecipeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), IngredientActivity.class);
+                Intent intent = new Intent(getApplicationContext(), UserMainActivity.class);
                 startActivity(intent);
             }
         });
