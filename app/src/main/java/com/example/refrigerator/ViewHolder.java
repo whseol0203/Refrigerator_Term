@@ -23,7 +23,7 @@ class ViewHolder extends RecyclerView.ViewHolder {
 
     ViewHolder(Context context, View itemView) {
         super(itemView);
-        userName = itemView.findViewById(R.id.ingredient_item_list_ingredient_name);
+        userName = itemView.findViewById(R.id.inquire_report_item_list_content_textView);
         content = itemView.findViewById(R.id.ingredient_item_list_ingredient_date);
         button = itemView.findViewById(R.id.ingredient_item_list_consume_button);
         button.setOnClickListener(new View.OnClickListener() {

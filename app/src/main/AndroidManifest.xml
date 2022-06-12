@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Refrigerator">
         <activity
-            android:name=".LoginActivity"
+            android:name=".Login_Activity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,32 +19,35 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AddRecipeActivity"
+            android:name=".Admin_AddRecipe_Activity"
             android:exported="false" />
         <activity
-            android:name=".CrawlingYoutubeActivity"
+            android:name=".User_CrawlingYoutube_Activity"
             android:exported="false" />
         <activity
-            android:name=".CheckUserReportActivity"
+            android:name=".Admin_InquireUserReport_Activity"
             android:exported="false" />
         <activity
-            android:name=".AdminMainActivity"
+            android:name=".Admin_Main_Activity"
             android:exported="false" />
         <activity
-            android:name=".ReportErrorActivity"
+            android:name=".User_ReportError_Activity"
             android:exported="false" />
         <activity
-            android:name=".ReportYoutubeChannelActivity"
+            android:name=".User_ReportYoutubeChannel_Activity"
             android:exported="false" />
         <activity
-            android:name=".IngredientActivity"
+            android:name=".User_InquireIngredient_Activity"
             android:exported="false" />
         <activity
-            android:name=".RegisterActivity"
+            android:name=".Register_Activity"
             android:exported="false" />
         <activity
-            android:name=".UserMainActivity"
+            android:name=".User_Main_Activity"
             android:exported="false" />
+        <activity
+            android:name=".User_InquireIngredientAdd_Dialog"
+            android:theme="@style/DialogTheme" />
 
     </application>
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ReportYoutubeChannelActivity">
+    tools:context=".User_ReportYoutubeChannel_Activity">
 
     <Button
         android:id="@+id/report_youtube_channel_back_button"

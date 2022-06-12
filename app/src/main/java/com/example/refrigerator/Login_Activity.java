@@ -17,9 +17,7 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-import org.w3c.dom.Document;
-
-public class LoginActivity extends AppCompatActivity {
+public class Login_Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,13 +52,13 @@ public class LoginActivity extends AppCompatActivity {
                                 if(inputPwd.equals(document.get("pwd").toString())){
                                     if(document.get("user_mode").toString().equals("user")){
                                         Log.d("Doc", "userMode Login success");
-                                        Intent intent = new Intent(getApplicationContext(), UserMainActivity.class);
+                                        Intent intent = new Intent(getApplicationContext(), User_Main_Activity.class);
                                         intent.putExtra("userId",idTextBox.getText().toString());
                                         intent.putExtra("userName",document.get("user_name").toString());
                                         startActivity(intent);
                                     }else if(document.get("user_mode").toString().equals("admin")){
                                         Log.d("Doc", "admin Login success");
-                                        Intent intent = new Intent(getApplicationContext(), AdminMainActivity.class);
+                                        Intent intent = new Intent(getApplicationContext(), Admin_Main_Activity.class);
                                         intent.putExtra("userId",idTextBox.getText().toString());
                                         intent.putExtra("userName",document.get("user_name").toString());
                                         startActivity(intent);
@@ -68,16 +66,16 @@ public class LoginActivity extends AppCompatActivity {
 
 
                                 }else{
-                                    Toast.makeText(LoginActivity.this, "비밀번호가 틀립니다.", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(Login_Activity.this, "비밀번호가 틀립니다.", Toast.LENGTH_SHORT).show();
                                 }
 
 
                             } else {
-                                Toast.makeText(LoginActivity.this, "아이디가 없습니다.", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(Login_Activity.this, "아이디가 없습니다.", Toast.LENGTH_SHORT).show();
                                 Log.d("Doc", "No such document");
                             }
                         } else {
-                            Toast.makeText(LoginActivity.this, "데이터베이스 오류.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Login_Activity.this, "데이터베이스 오류.", Toast.LENGTH_SHORT).show();
                             Log.d("Doc", "get failed with ", task.getException());
                         }
                     }
@@ -89,7 +87,7 @@ public class LoginActivity extends AppCompatActivity {
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), RegisterActivity.class);
+                Intent intent = new Intent(getApplicationContext(), Register_Activity.class);
                 startActivity(intent);
             }
         });

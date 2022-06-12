@@ -11,14 +11,22 @@
         <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/activity_crawling_youtube.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/activity_crawling_youtube_channel.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/activity_ingredient.xml" value="0.33" />
+        <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/activity_inquire_report.xml" value="0.3770833333333333" />
         <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/activity_main.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/activity_recipe_add.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/activity_register.xml" value="0.33" />
+        <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/activity_report.xml" value="0.33" />
         <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/activity_report_error.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/activity_report_youtube_channel.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/activity_request_recipe.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/activity_user_main.xml" value="0.2463768115942029" />
+        <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/admin_activity_add_recipe.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/admin_activity_crawling_youtube_channel.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/admin_activity_inquire_report.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/admin_activity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/admin_download_recipe.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/admin_item_list_inquire_report.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/download_recipe.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/ingredient_item.xml" value="0.3060453400503778" />
         <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/ingredient_item_list.xml" value="0.36614583333333334" />
@@ -26,6 +34,18 @@
         <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/popup_ingredient.xml" value="0.33" />
         <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/popup_ingredient_add.xml" value="0.33" />
         <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/popup_report_error.xml" value="0.33" />
+        <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/report_item_list.xml" value="0.33" />
+        <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/styles.xml" value="0.18645833333333334" />
+        <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/temp_item_list.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/user_activity_crawling_youtube.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/user_activity_ingredient.xml" value="0.33" />
+        <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/user_activity_inquire_ingredient.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/user_activity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/user_activity_report_error.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/user_activity_report_youtube_channel.xml" value="0.33" />
+        <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/user_item_list_inquire_ingredient.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/user_popup_add_ingredient.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/whseol/Desktop/Refrigerator/app/src/main/res/layout/user_popup_ingredient.xml" value="0.36614583333333334" />
       </map>
     </option>
   </component>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UserMainActivity">
+    tools:context=".User_Main_Activity">
 
     <Button
         android:id="@+id/user_main_inquire_ingredient"

@@ -10,10 +10,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class Adapter extends RecyclerView.Adapter<ViewHolder> {
+public class Temp_Adapter extends RecyclerView.Adapter<ViewHolder> {
     private ArrayList<String> arrayList;
 
-    public Adapter() {
+    public Temp_Adapter() {
         arrayList = new ArrayList<String>();
     }
 
@@ -22,7 +22,7 @@ public class Adapter extends RecyclerView.Adapter<ViewHolder> {
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         Context context = parent.getContext();
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View view = inflater.inflate(R.layout.item_list, parent, false);
+        View view = inflater.inflate(R.layout.temp_item_list, parent, false);
         ViewHolder viewholder = new ViewHolder(context, view);
         return viewholder;
     }

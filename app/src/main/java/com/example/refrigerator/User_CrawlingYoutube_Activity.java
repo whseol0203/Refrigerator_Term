@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class CheckUserReportActivity extends AppCompatActivity {
+public class User_CrawlingYoutube_Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_check_user_report);
+        setContentView(R.layout.user_activity_crawling_youtube);
     }
 }

@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class RegisterActivity extends AppCompatActivity {
+public class Register_Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +34,7 @@ public class RegisterActivity extends AppCompatActivity {
                         pwdTextBox.getText().toString(),
                         "user");
                 register.doRegister(new DB());
-                Toast.makeText(RegisterActivity.this, "회원가입 완료", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Register_Activity.this, "회원가입 완료", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -42,7 +42,7 @@ public class RegisterActivity extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+                Intent intent = new Intent(getApplicationContext(), Login_Activity.class);
                 startActivity(intent);
             }
         });

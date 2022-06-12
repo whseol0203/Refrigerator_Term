@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".IngredientActivity">
+    tools:context=".User_InquireIngredient_Activity">
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/inquire_report_editText"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center"
@@ -18,17 +18,17 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyceler_view"
+        android:id="@+id/inquire_report_recyceler_view"
         android:layout_width="410dp"
         android:layout_height="500dp"
         android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/inquire_report_editText" />
 
     <Button
-        android:id="@+id/inquire_ingredient_back_button"
+        android:id="@+id/inquire_report_back_button"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
@@ -38,6 +38,21 @@
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/inquire_report_remove_button"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        android:text="추가하기"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/inquire_report_back_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />

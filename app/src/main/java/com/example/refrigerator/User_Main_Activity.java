@@ -2,19 +2,17 @@ package com.example.refrigerator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class UserMainActivity extends AppCompatActivity {
+public class User_Main_Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_main);
+        setContentView(R.layout.user_activity_main);
 
         Intent intent = getIntent();
         TextView greeting = findViewById(R.id.textView8);
@@ -34,7 +32,7 @@ public class UserMainActivity extends AppCompatActivity {
         inquireIngredientButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), IngredientActivity.class);
+                Intent intent = new Intent(getApplicationContext(), User_InquireIngredient_Activity.class);
                 startActivity(intent);
             }
         });
@@ -43,7 +41,7 @@ public class UserMainActivity extends AppCompatActivity {
         inquireRecipeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), UserMainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), User_Main_Activity.class);
                 startActivity(intent);
             }
         });
@@ -52,7 +50,7 @@ public class UserMainActivity extends AppCompatActivity {
         reportErrorButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), ReportErrorActivity.class);
+                Intent intent = new Intent(getApplicationContext(), User_ReportError_Activity.class);
                 intent.putExtra("userName", userName);
                 intent.putExtra("userId",userId);
                 startActivity(intent);
@@ -63,7 +61,7 @@ public class UserMainActivity extends AppCompatActivity {
         requestYoutubeChannelButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), ReportYoutubeChannelActivity.class);
+                Intent intent = new Intent(getApplicationContext(), User_ReportYoutubeChannel_Activity.class);
                 intent.putExtra("userName", userName);
                 intent.putExtra("userId",userId);
                 startActivity(intent);
@@ -74,9 +72,11 @@ public class UserMainActivity extends AppCompatActivity {
         logoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+                Intent intent = new Intent(getApplicationContext(), Login_Activity.class);
                 startActivity(intent);
             }
         });
     }
+
+
 }
