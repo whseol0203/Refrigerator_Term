@@ -40,9 +40,9 @@ public class User_ReportYoutubeChannel_Activity extends AppCompatActivity {
                 FirebaseFirestore databaseInstance = FirebaseFirestore.getInstance();
 
                 Map<String, String> content = new HashMap<>();
-                content.put("content", reportContent.getText().toString());
+                content.put("reportChannel", reportContent.getText().toString());
 
-                databaseInstance.collection("user_report_channel")
+                databaseInstance.collection("user_report")
                         .document(userName)
                         .set(content);
 

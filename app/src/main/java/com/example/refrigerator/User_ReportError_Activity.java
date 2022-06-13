@@ -40,7 +40,7 @@ public class User_ReportError_Activity extends AppCompatActivity {
                 FirebaseFirestore databaseInstance = FirebaseFirestore.getInstance();
 
                 Map<String, String> content = new HashMap<>();
-                content.put("content", reportContent.getText().toString());
+                content.put("report error", reportContent.getText().toString());
 
                 databaseInstance.collection("user_report")
                         .document(userName)
